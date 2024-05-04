@@ -45,7 +45,7 @@ class Student:
         self.is_alive()
 
 vova_Adidas = Student(name='vova_Adidas')
-for day in range(1,100000000000000):
+for day in range(1,50):
     if not vova_Adidas.alive:
         break
     vova_Adidas.live(day)
