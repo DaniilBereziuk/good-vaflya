@@ -27,11 +27,44 @@ class Hacker:
         self.num9 = 0
         self.password = password
 
-    def num_1(self):
-        self.num1 += 1
-        self.code = f'{self.num1}{self.num2}{self.num3}{self.num4}{self.num5}{self.num6}{self.num7}{self.num8}{self.num9}'
-        print(self.code)
+    def golovna(self):
+        while 1 == 1:
+            self.num1 += 1
+            self.code = f'{self.num1}{self.num2}{self.num3}{self.num4}{self.num5}{self.num6}{self.num7}{self.num8}{self.num9}'
+            if self.password == self.code:
+                print(self.code)
+                break
+            else:
+                self.num1 += 1
+
+    def checks(self):
+        while True:
+            if self.num1 == 10:
+                self.num1 = 10
+                self.num2 += 1
+            if self.num2 == 10:
+                self.num2 = 10
+                self.num3 += 1
+            if self.num3 == 10:
+                self.num3 = 10
+                self.num4 += 1
+            if self.num4 == 10:
+                self.num4 = 10
+                self.num5 += 1
+            if self.num5 == 10:
+                self.num5 = 10
+                self.num6 += 1
+            if self.num6 == 10:
+                self.num6 = 10
+                self.num7 += 1
+            if self.num7 == 10:
+                self.num7 = 10
+                self.num8 += 1
+            if self.num8 == 10:
+                self.num8 = 10
+                self.num9 += 1
 
 
-xz = Hacker(password="2k0fw10geq")
-xz.num_1()
+
+xz = Hacker(password="666666666")
+xz.golovna() and xz.checks()
