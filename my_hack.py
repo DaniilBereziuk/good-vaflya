@@ -28,17 +28,11 @@ class Hacker:
         self.password = password
 
     def golovna(self):
-        while 1 == 1:
+        self.code = f'{self.num1}{self.num2}{self.num3}{self.num4}{self.num5}{self.num6}{self.num7}{self.num8}{self.num9}'
+        while self.code != self.password:
             self.num1 += 1
             self.code = f'{self.num1}{self.num2}{self.num3}{self.num4}{self.num5}{self.num6}{self.num7}{self.num8}{self.num9}'
-            if self.password == self.code:
-                print(self.code)
-                break
-            else:
-                self.num1 += 1
-
-    def checks(self):
-        while True:
+            self.num1 += 1
             if self.num1 == 10:
                 self.num1 = 10
                 self.num2 += 1
@@ -63,8 +57,10 @@ class Hacker:
             if self.num8 == 10:
                 self.num8 = 10
                 self.num9 += 1
+        print(self.code)
 
 
 
-xz = Hacker(password="666666666")
-xz.golovna() and xz.checks()
+
+xz = Hacker(password="200000000")
+xz.golovna()
